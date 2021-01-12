@@ -1,422 +1,511 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-</style>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-<body class="w3-light-grey">
+    <title>Reflux HTML CSS Template</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
 
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="photo1.jpg" width="100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer
-                        </p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Orlando, FL</p>
-                        <p style="font-size: small;"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Monyechi@Gmail.com
-                        </p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 407-583-9034</p>
-                        <hr>
-
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                        <div>
-                            <p><img src="https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png" alt="Icon Request: fa-javascript OR fa-js &middot; Issue #11419 &middot; FortAwesome ..." width="80%" /></p>
-                        </div>
-
-                        <p><img src="https://cdn.iconscout.com/icon/free/png-512/csharp-1-1175241.png" alt="Csharp Icon of Flat style - Available in SVG, PNG, EPS, AI &amp; Icon ..." width="35%" height=/><img src="https://s3-us-west-1.amazonaws.com/striim-prod-media/wp-content/uploads/2018/06/22135447/Azure-SQL-icon.png"
-                                alt="Continuous Real-Time Data Integration to Azure SQL Database - Striim" width="45%" /></p>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Other
-                                Skills/Proficiencies</b></p>
-                        <p class="otherSkills"><strong><span
-                                    style="text-decoration: underline;">Windows</span>&nbsp;<u>OS X</u>
-                                <span style="text-decoration: underline;">RESTful API</span> <span
-                                    style="text-decoration: underline;">Typing</span> <span
-                                    style="text-decoration: underline;">Debugging</span>&nbsp;<span
-                                    style="text-decoration: underline;">jQuery</span>&nbsp;<span
-                                    style="text-decoration: underline;">SQL
-                                    Databases</span>&nbsp;<span style="text-decoration: underline;">Software
-                                    Testing</span> <span style="text-decoration: underline;">AJAX</span> <span
-                                    style="text-decoration: underline;">Photoshop</span> <span
-                                    style="text-decoration: underline;">FCPX</span>&nbsp;<span
-                                    style="text-decoration: underline;">MS
-                                    Word</span> <span style="text-decoration: underline;">Excel</span></strong></p>
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
             </div>
-
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fas fa-address-card fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me
-                    </h2>
-                    <div class="w3-container">
-                        Hello, my name is <b>Michael Onyechi</b>, and I'm a Full-Stack Developer. I recently graduated from DevCodeCamp’s Full-Stack bootcamp and I’m eager to dive into the software development field. I’m a fast learner, I work hard and
-                        I don’t allow any situation to defeat me. I attribute that quality to my military experience.
-                        <p>Serving 3+ years in the Army taught me critical problem-solving skills, discipline, and attention to detail. My hobbies include listening to music, watching anime, reading, and NBA basketball, but my absolute favorite hobby is
-                            traveling internationally and trying all the different kinds of foods.</p>
-                        <hr>
-                    </div>
-
-                </div>
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
-                    </h2>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity"><b>DevCodeCamp</b></h4>
-                        <p class="w3-opacity"><b>313 N Plankinton Ave Suite #209,</br>Milwaukee, WI 53203</b></p>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2020 - June 2020
-                        </h6>
-                        <p>Full-Stack Software Development Bootcamp</p>
-                        <hr>
-                    </div>
-
-                </div>
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity otherSkills"><b>Quiz Master</b></h5>
-                        <p class="w3-opacity"><b>Quiz Master is a project I built while attending DevCodeCamp.
-                                I built this project using the following technologies: C#, JavaScript, ASP.NET Core,
-                                CSS, openTriviaDb
-                                API, and HTML. </br></br>
-                                The objective of this project is to allow users to create an account, giving them access
-                                to various
-                                quizzes.
-                            </b></p>
-                        <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Project Source Code found <a href="https://github.com/Monyechi/QuizMaster">HERE</a></p>
-                        </br>
-                        </br>
-
-                        <div class="Quiz">
-                            <p class="QuizTitle">
-                                Project Sample - Demo Quiz
-                            </p>
-                            <p hidden class="category" id="category">
-                            </p>
-                            <p hidden id="difficulty">
-                            </p>
-                            <p class="question" id="question">
-                            </p>
-                            <button class="button button1" id="answer1">
-                            </button>
-
-                            <button class="button button2" id="answer2">
-                            </button>
-                            <button class="button button3" id="answer3">
-                            </button>
-                            <button class="button button4" id="answer4">
-                            </button>
-                            <hr>
-                        </div>
-
-                        <h5 class="w3-opacity otherSkills"><b>Reverse A String</b></h5>
-                        <p class="w3-opacity"><b>This is a very simple Project I madewhile attending DevCodeCamp.
-                                We originally built this project using C#, but for demo purposes I rebuilt the project
-                                using HTML & JavaScript,</br></br>
-                                The objective of this project is to take in a string, and return the string in reverse.
-                            </b></p>
-
-                        <form id="myForm">
-                            <label for="inputText"><b>Enter whatever you want:</b></label>
-                            <input type="text" id="inputText" name="inputText">
-                            <input type="submit" value="Submit">
-                        </form>
-                        </br>
-                        </br>
-
-                        Your String in reverse: <u id="reversedString"></u>
-
-                        <br><br>
-                        </form>
-                        <script>
-                            const myForm = document.getElementById("myForm");
-                            myForm.addEventListener("submit", (e) => {
-                                e.preventDefault();
-                                let text = document.getElementById("inputText").value;
-                                let newText = ReverseString(text);
-                                document.querySelector("#reversedString").innerHTML = newText;
-                                console.log("Form has been submitted")
-                                console.log(newText)
-                            })
-
-                            function ReverseString(anyString) {
-                                const newString = anyString
-                                    .split('')
-                                    .reverse()
-                                    .join('');
-
-                                return newString
-                            }
-                        </script>
-
-                    </div>
-
-
-                </div>
-
-                <!-- End Right Column -->
+            <div class="author-content">
+              <h4>Reflux Me</h4>
+              <span>Web Designer</span>
             </div>
-
-            <!-- End Grid -->
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- End Page Container -->
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
+              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Reflux HTML CSS Template</h4>
+                  <p>
+                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
+                    sed. Mauris viverra, erat non sagittis gravida, elit dui
+                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
+                    tincidunt quam vitae neque pharetra dignissim eget ut
+                    libero.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Sed sagittis rhoncus velit</h4>
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum fermentum
+                    eleifend nibh, vitae sodales elit finibus pretium.
+                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                    semper.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What I’m good at?</h2>
+            <div class="line-dec"></div>
+            <span
+              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
+              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
+              Nullam eu faucibus diam. Donec eget massa ante.</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>HTML5 &amp; CSS3</h4>
+                <p>
+                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
+                  at bibendum. Sed ac ante non metus vehicula congue quis eget
+                  eros.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="second-service-icon service-icon"></div>
+                <h4>Creative Ideas</h4>
+                <p>
+                  Proin lacus massa, eleifend sed fermentum in, dignissim vel
+                  metus. Nunc accumsan leo nec felis porttitor, ultricies
+                  faucibus purus mollis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="third-service-icon service-icon"></div>
+                <h4>Easy Customize</h4>
+                <p>
+                  Integer suscipit condimentum aliquet. Nam quis risus metus.
+                  Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
+                  dui.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Admin Dashboard</h4>
+                <p>
+                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
+                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
+                  leo nec felis porttitor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span
+              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
+              mauris.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>people</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>animals</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>First Title</h4>
+                      <span>free to use our template</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-02.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-02.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Third</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Fourth</h4>
+                      <span>Re-distribution not allowed</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Fifth Awesome</h4>
+                      <span>Ut sollicitudin risus</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Awesome Sixth</h4>
+                      <span>Donec eget massa ante</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
+              efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit.</span
+            >
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Find me on social media.</p>
-        <a href="https://www.instagram.com/mikey.abroad/" target="_blank"><i
-                class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="https://github.com/Monyechi" target="_blank"><i class="fa fa-git-square w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/monyechi/" target="_blank"><i
-                class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </footer>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
-</body>
-<style>
-    .Quiz {
-        position: relative;
-        top: -60px;
-        left: 0%;
-        width: 720px;
-        padding: 30px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.45);
-        color: black;
-        height: 300px;
-    }
-    
-    .QuizTitle {
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        top: 0px;
-        left: 0px;
-        font-size: 20px;
-        position: relative;
-    }
-    
-    .button {
-        background-color: #4CAF50;
-        /* Green */
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        width: 150px;
-        height: 110px;
-    }
-    
-    .button1 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        left: 0px;
-        bottom: 0px;
-    }
-    
-    .button1:hover {
-        background-color: #73b999;
-        color: white;
-    }
-    
-    .button2 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button2:hover {
-        background-color: #73b999;
-        color: white;
-    }
-    
-    .button3 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button3:hover {
-        background-color: #73b999;
-        color: white;
-    }
-    
-    .button4 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button4:hover {
-        background-color: #73b999;
-        color: white;
-    }
-    
-    .category {
-        font-weight: 400;
-        font-style: italic;
-        position: relative;
-        top: -20px;
-        left: 0px;
-    }
-    
-    .question {
-        font-family: Calibri;
-        font-size: 20px;
-        padding-bottom: 30px;
-        font-size: 20px;
-        font-weight: 200;
-    }
-    
-    .otherSkills {
-        color: teal;
-        font-size: 18px;
-    }
-</style>
-<script>
-    window.onload = sendApiRequest
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
 
-    //An asynchronous function to fetch data from the API.
-    async function sendApiRequest() {
-        let response = await fetch(`https://opentdb.com/api.php?amount=1&category=9&difficulty=hard&type=multiple`);
-        console.log(response)
-        let data = await response.json()
-        console.log(data)
-        quizApp(data)
-    }
-
-    // A function to shuffle array of answers
-    Array.prototype.shuffle = function() {
-        let i = this.length,
-            j, temp;
-        while (--i > 0) {
-            j = Math.floor(Math.random() * (i + 1));
-            temp = this[j];
-            this[j] = this[i];
-            this[i] = temp;
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
         }
-        return this;
-    }
+      };
 
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
 
-    //function that does something with the data received from the API.
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
 
-
-    function quizApp(data) {
-        var correctAnswer = data.results[0].correct_answer;
-        let wrongAnswer1 = data.results[0].incorrect_answers[0];
-        let wrongAnswer2 = data.results[0].incorrect_answers[1];
-        let wrongAnswer3 = data.results[0].incorrect_answers[2];
-
-        let answer1;
-        let answer2;
-        let answer3;
-        let answer4;
-
-        let answers = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
-        let shuffledAnswers = answers.shuffle();
-
-        answer1 = shuffledAnswers[0];
-        answer2 = shuffledAnswers[1];
-        answer3 = shuffledAnswers[2];
-        answer4 = shuffledAnswers[3];
-
-        let button1 = document.querySelector("#answer1");
-        let button2 = document.querySelector("#answer2");
-        let button3 = document.querySelector("#answer3");
-        let button4 = document.querySelector("#answer4");
-
-
-        document.querySelector("#category").innerHTML = `Category: ${data.results[0].category}`
-        document.querySelector("#difficulty").innerHTML = `Difficulty: ${data.results[0].difficulty}`
-        document.querySelector("#question").innerHTML = `Question: ${data.results[0].question}`
-        document.querySelector("#answer1").innerHTML = answer1
-        document.querySelector("#answer2").innerHTML = answer2
-        document.querySelector("#answer3").innerHTML = answer3
-        document.querySelector("#answer4").innerHTML = answer4
-
-        var RightAnswer = answers.find(element => element === correctAnswer);
-
-        button1.addEventListener("click", () => {
-            compareAnswer(answer1)
-        })
-
-        button2.addEventListener("click", () => {
-            compareAnswer(answer2)
-        })
-
-        button3.addEventListener("click", () => {
-            compareAnswer(answer3)
-        })
-
-        button4.addEventListener("click", () => {
-            compareAnswer(answer4)
-        })
-
-        function compareAnswer(answer) {
-            if (answer === RightAnswer) {
-                alert("Correct! YOU ARE SO SMART!")
-                location.reload()
-            } else if (answer !== RightAnswer) {
-                alert("You are so Wrong! The Correct Answer is " + RightAnswer)
-                location.reload()
-            }
-        }
-
-    }
-</script>
-
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>

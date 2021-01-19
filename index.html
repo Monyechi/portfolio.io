@@ -162,8 +162,8 @@ https://templatemo.com/tm-531-reflux
                 <div class="second-service-icon service-icon"></div>
                 <h4>Frontend & Backend</h4>
                 <p>
-                  On the front-end side, I have a good understanding of HTML5
-                  and CSS3. And on the back-end side I have a solid understand
+                  On the front-end side, I have a solid understanding of HTML5
+                  and CSS3. And on the back-end side I have a good understand
                   C# and JavaScript.
                 </p>
               </div>
@@ -203,165 +203,94 @@ https://templatemo.com/tm-531-reflux
           <div class="section-heading">
             <h2>My Work</h2>
             <div class="line-dec"></div>
-            <span
-              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
-              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-              mauris.</span
-            >
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="people"
-                    name="isotope-filter"
-                  />
-                  <span>people</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="nature"
-                    name="isotope-filter"
-                  />
-                  <span>nature</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="animals"
-                    name="isotope-filter"
-                  />
-                  <span>animals</span></label
-                >
-              </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-01.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-01.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>First Title</h4>
-                      <span>free to use our template</span>
-                    </figcaption>
-                  </figure>
+            <span>
+              These are a few samples of projects that I've completed. 
+              I've included a link to the full source code to view the project in it's entirety.
+            </span></br></br></br>
+              
+              <div class="w3-container w3-card w3-white">
+                <div class="w3-container">
+                    <h3 class="w3-opacity otherSkills">Quiz Master</h3>
+                    <p class="w3-opacity">Quiz Master is a project I built while attending DevCodeCamp.
+                            I built this project using the following technologies: C#, JavaScript, ASP.NET Core,
+                            CSS, openTriviaDb
+                            API, and HTML. </br></br>
+                            The objective of this project is to allow users to create an account, giving them access
+                            to various
+                            quizzes.
+                        </p>
+                    </br>
+                    </br>
+
+                    <div class="Quiz">
+                        <p class="QuizTitle">
+                            Project Sample - Demo Quiz
+                        </p>
+                        <p hidden class="category" id="category">
+                        </p>
+                        <p hidden id="difficulty">
+                        </p>
+                        <p class="question" id="question">
+                        </p>
+                        <button class="button button1" id="answer1">
+                        </button>
+
+                        <button class="button button2" id="answer2">
+                        </button>
+                        <button class="button button3" id="answer3">
+                        </button>
+                        <button class="button button4" id="answer4">
+                        </button>
+                        <hr>
+                    </div>
+
+                    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Project Source Code found <a href="https://github.com/Monyechi/QuizMaster">HERE</a></p>
+
+                    <h5 class="w3-opacity otherSkills"><b>Reverse A String</b></h5>
+                    <p class="w3-opacity"><b>This is a very simple Project I madewhile attending DevCodeCamp.
+                            We originally built this project using C#, but for demo purposes I rebuilt the project
+                            using HTML & JavaScript,</br></br>
+                            The objective of this project is to take in a string, and return the string in reverse.
+                        </b></p>
+
+                    <form id="myForm">
+                        <label for="inputText"><b>Enter whatever you want:</b></label>
+                        <input type="text" id="inputText" name="inputText">
+                        <input type="submit" value="Submit">
+                    </form>
+                    </br>
+                    </br>
+
+                    Your String in reverse: <u id="reversedString"></u>
+
+                    <br><br>
+                    </form>
+                    <script>
+                        const myForm = document.getElementById("myForm");
+                        myForm.addEventListener("submit", (e) => {
+                            e.preventDefault();
+                            let text = document.getElementById("inputText").value;
+                            let newText = ReverseString(text);
+                            document.querySelector("#reversedString").innerHTML = newText;
+                            console.log("Form has been submitted")
+                            console.log(newText)
+                        })
+
+                        function ReverseString(anyString) {
+                            const newString = anyString
+                                .split('')
+                                .reverse()
+                                .join('');
+
+                            return newString
+                        }
+                    </script>
+
                 </div>
 
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-02.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-02.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Second Title</h4>
-                      <span>please tell your friends</span>
-                    </figcaption>
-                  </figure>
-                </div>
 
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-03.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-03.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Item Third</h4>
-                      <span>customize anything</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-04.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-04.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Item Fourth</h4>
-                      <span>Re-distribution not allowed</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-05.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-05.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Fifth Awesome</h4>
-                      <span>Ut sollicitudin risus</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-06.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-06.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Awesome Sixth</h4>
-                      <span>Donec eget massa ante</span>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
             </div>
+              
           </div>
         </div>
       </section>
@@ -371,11 +300,11 @@ https://templatemo.com/tm-531-reflux
           <div class="section-heading">
             <h2>Contact Me</h2>
             <div class="line-dec"></div>
-            <span
-              >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
-              efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit.</span
-            >
+            <span>
+              <p><b>(The best way to contact me would be by Email)</b></p>
+<p>E-Mail: <a href="mailto:Monyechi@Gmail.com">Monyechi@Gmail.com </a></p>
+<p>Phone: 407-924-6215</p>
+              </span>
           </div>
           <div class="row">
             <div class="right-content">
@@ -455,4 +384,206 @@ https://templatemo.com/tm-531-reflux
       });
     </script>
   </body>
+
+  <style>
+    .Quiz {
+        position: relative;
+        top: -60px;
+        left: 10%;
+        width: 720px;
+        padding: 30px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.45);
+        color: black;
+        height: 300px;
+    }
+    
+    .QuizTitle {
+        color: black;
+        top: 0px;
+        left: 0px;
+        position: relative;
+    }
+    
+    .button {
+        background-color: #a43f49;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        width: 150px;
+        height: 110px;
+    }
+    
+    .button1 {
+        background-color: rgba(0, 0, 0, 0.63);
+        color: white;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+    
+    .button1:hover {
+        background-color: #a43f49;
+        color: white;
+    }
+    
+    .button2 {
+        background-color: rgba(0, 0, 0, 0.63);
+        color: white;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    .button2:hover {
+        background-color: #a43f49;
+        color: white;
+    }
+    
+    .button3 {
+        background-color: rgba(0, 0, 0, 0.63);
+        color: white;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    .button3:hover {
+        background-color: #a43f49;
+        color: white;
+    }
+    
+    .button4 {
+        background-color: rgba(0, 0, 0, 0.63);
+        color: white;
+        position: relative;
+        bottom: 0px;
+    }
+    
+    .button4:hover {
+        background-color: #a43f49;
+        color: white;
+    }
+    
+    .category {
+        font-weight: 400;
+        font-style: italic;
+        position: relative;
+        top: -20px;
+        left: 0px;
+    }
+    
+    .question {
+        font-size: 20px;
+        padding-bottom: 30px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .otherSkills {
+        color: #a43f49;
+        font-size: 18px;
+    }
+</style>
+<script>
+    window.onload = sendApiRequest
+
+    //An asynchronous function to fetch data from the API.
+    async function sendApiRequest() {
+        let response = await fetch(`https://opentdb.com/api.php?amount=1&category=9&difficulty=hard&type=multiple`);
+        console.log(response)
+        let data = await response.json()
+        console.log(data)
+        quizApp(data)
+    }
+
+    // A function to shuffle array of answers
+    Array.prototype.shuffle = function() {
+        let i = this.length,
+            j, temp;
+        while (--i > 0) {
+            j = Math.floor(Math.random() * (i + 1));
+            temp = this[j];
+            this[j] = this[i];
+            this[i] = temp;
+        }
+        return this;
+    }
+
+
+    //function that does something with the data received from the API.
+
+
+    function quizApp(data) {
+        var correctAnswer = data.results[0].correct_answer;
+        let wrongAnswer1 = data.results[0].incorrect_answers[0];
+        let wrongAnswer2 = data.results[0].incorrect_answers[1];
+        let wrongAnswer3 = data.results[0].incorrect_answers[2];
+
+        let answer1;
+        let answer2;
+        let answer3;
+        let answer4;
+
+        let answers = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
+        let shuffledAnswers = answers.shuffle();
+
+        answer1 = shuffledAnswers[0];
+        answer2 = shuffledAnswers[1];
+        answer3 = shuffledAnswers[2];
+        answer4 = shuffledAnswers[3];
+
+        let button1 = document.querySelector("#answer1");
+        let button2 = document.querySelector("#answer2");
+        let button3 = document.querySelector("#answer3");
+        let button4 = document.querySelector("#answer4");
+
+
+        document.querySelector("#category").innerHTML = `Category: ${data.results[0].category}`
+        document.querySelector("#difficulty").innerHTML = `Difficulty: ${data.results[0].difficulty}`
+        document.querySelector("#question").innerHTML = `Question: ${data.results[0].question}`
+        document.querySelector("#answer1").innerHTML = answer1
+        document.querySelector("#answer2").innerHTML = answer2
+        document.querySelector("#answer3").innerHTML = answer3
+        document.querySelector("#answer4").innerHTML = answer4
+
+        var RightAnswer = answers.find(element => element === correctAnswer);
+
+        button1.addEventListener("click", () => {
+            compareAnswer(answer1)
+        })
+
+        button2.addEventListener("click", () => {
+            compareAnswer(answer2)
+        })
+
+        button3.addEventListener("click", () => {
+            compareAnswer(answer3)
+        })
+
+        button4.addEventListener("click", () => {
+            compareAnswer(answer4)
+        })
+
+        function compareAnswer(answer) {
+            if (answer === RightAnswer) {
+                alert("Correct! YOU ARE SO SMART!")
+                location.reload()
+            } else if (answer !== RightAnswer) {
+                alert("You are so Wrong! The Correct Answer is " + RightAnswer)
+                location.reload()
+            }
+        }
+
+    }
+</script>
+
 </html>

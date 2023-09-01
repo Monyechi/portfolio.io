@@ -1,0 +1,57 @@
+/* Updated CSS for Game Buttons */
+.button {
+    background-color: #2b78ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 150px; /* Fixed width */
+    height: 110px; /* Fixed height */
+    font-size: 16px;
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.button1 {
+    background-color: #000000a1;
+}
+
+.button1:hover {
+    background-color: #2b78ff;
+}
+
+.button2,
+.button3,
+.button4 {
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.button2:hover,
+.button3:hover,
+.button4:hover {
+    background-color: #2b78ff;
+}
+/* CSS for Blue Titles */
+.blue-title {
+    color: #2b78ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.question {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the size as needed */
+    animation: flash-underline 0.5s infinite; /* Flashing underline animation */
+}
+
+@keyframes flash-underline {
+    0%, 100% {
+        text-decoration: none;
+    }
+    50% {
+        text-decoration: underline;
+    }
+}

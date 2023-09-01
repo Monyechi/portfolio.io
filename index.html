@@ -1,589 +1,720 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+<html lang="en" class="no-js">
 
-    <title>Michael Onyechi's Portfolio</title>
-    <!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PRO Card - Material Resume / CV / vCard Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="PRO Card - Material Resume / CV / vCard Template" />
+  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+  <meta name="author" content="lmtheme" />
+  <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"
-                ><img src="assets/images/author-image.jpg" alt=""
-              /></a>
-            </div>
-            <div class="author-content">
-              <h4>Michael Onyechi</h4>
-              <span>Software Developer</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact Me</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://www.linkedin.com/in/monyechi/"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/Monyechi"
-                    ><i class="fa fa-github"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body class="material-template">
+  <!-- Loading animation -->
+  <div class="preloader">
+    <div class="preloader-animation">
+      <div class="preloader-spinner">
+      </div>
+    </div>
+  </div>
+  <!-- /Loading animation -->
+
+  <div id="page" class="page">
+    <!-- Header -->
+    <header id="site_header" class="header mobile-menu-hide">
+      <div class="header-content">
+        <div class="site-title-block mobile-hidden">
+          <div class="site-title">Michael <span>Onyechi</span></div>
         </div>
+
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" href="#home"
+                data-animation="62">Home</a><!-- href value = data-id without # of .pt-page. -->
+            </li>
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="62">Resume</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#services" data-animation="62">Services</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#demos" data-animation="62">Demo Projects</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="62">Editing Portfolio</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
+        </div>
+        <!-- Navigation -->
+      </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-site-title">Michael Onyechi</div>
       </div>
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >Hi, I'm Michael, and I recently graduated from devCodeCamp’s
-              Full-Stack software development bootcamp in Milwaukee, WI and I’m
-              eager to dive into the software development field. I am a driven
-              individual with the ability to adapt to any situation with proven
-              potantial to grow myself and others. After serving 3+ years in the
-              Army, I obtained critical problem-solving skills, discipline, and
-              attention to detail which I'm fully confident will aid me in any
-              career field, especially in software development. Furthermore, I
-              am adept at handling multiple tasks on a daily basis competently
-              and at working well under pressure.</span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.jpg" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Earned Not Given</h4>
-                  <p>
-                    The Army Achievement Medal is awarded to any member of the
-                    Armed Forces who distinguished him or herself by meritorious
-                    service or achievement. I did just that. I have a proven
-                    work ethic and a determination to succeed. Failure is never
-                    an option for me.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Step Out of Your Comfort Zone</h4>
-                  <p>
-                    As someone who solo traveled across the world to many
-                    countries, I wasn’t afraid to step outside of my comfort
-                    zone as I knew I would have to in order to see the world
-                    Like I wanted to. One of my favorite quotes by Roy T.
-                    Bennett goes “You never change your life until you step out
-                    of your comfort zone; change begins at the end of your
-                    comfort zone.” I not only apply that to traveling, but to
-                    everything I do in life. Many times in software development
-                    you'll be challeged and forced to step outside of you
-                    comfort zone; I'm not afraid to rise to the challege.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- /Mobile Header -->
 
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>What I’m good at?</h2>
-            <div class="line-dec"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
-                <p>
-                  I pride myself on my ability to not only think outside the box
-                  but also my ability to come up with creative and unique
-                  solutions.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Frontend & Backend</h4>
-                <p>
-                  On the front-end side, I have a solid understanding of HTML5
-                  and CSS3. And on the back-end side I have a good understand
-                  C# and JavaScript.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Problem-Solving</h4>
-                <p>
-                  Solving problems is one of my best attributes and something I
-                  enjoy doing as well. When ever I encounter a problem, I stop
-                  at nothing to figure out a solution to resolve the problem. I
-                  go to great lengths and utilize all available resources to
-                  ensure the problem at hand gets resolved.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Resourcefulness</h4>
-                <p>
-                  Not know how to do a task has never stopped me from completing
-                  the task. Whenever I'm in a situation in which I'm unsure of
-                  how to proceed, I use whatever resources I have available to
-                  me to obtain the necessary knowledge needed to complete the
-                  task or to solve the problem at hand.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- Main Content -->
+    <div id="main" class="site-main">
+      <!-- Page changer wrapper -->
+      <div class="pt-wrapper">
+        <!-- Subpages -->
+        <div class="subpages">
 
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span>
-              These are a few samples of projects that I've completed. 
-              I've included a link to the full source code to view the project in it's entirety.
-            </span></br></br></br>
-              
-              <div class="w3-container w3-card w3-white">
-                <div class="w3-container">
-                    <h3 class="w3-opacity otherSkills">Quiz Master</h3>
-                    <p class="w3-opacity">Quiz Master is a project I built while attending DevCodeCamp.
-                            I built this project using the following technologies: C#, JavaScript, ASP.NET Core,
-                            CSS, openTriviaDb
-                            API, and HTML. </br></br>
-                            The objective of this project is to allow users to create an account, giving them access
-                            to various
-                            quizzes.
-                        </p>
-                    </br>
-                    </br>
+          <!-- Home Subpage -->
+          <section class="pt-page" data-id="home">
+            <div class="section-inner start-page-content">
+              <div class="page-header">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="photo">
+                      <img src="images/photo.png" alt="">
+                    </div>
+                  </div>
 
-                    <div class="Quiz">
-                        <p class="QuizTitle">
-                            Project Sample - Demo Quiz
-                        </p>
-                        <p hidden class="category" id="category">
-                        </p>
-                        <p hidden id="difficulty">
-                        </p>
-                        <p class="question" id="question">
-                        </p>
-                        <button class="button button1" id="answer1">
-                        </button>
-
-                        <button class="button button2" id="answer2">
-                        </button>
-                        <button class="button button3" id="answer3">
-                        </button>
-                        <button class="button button4" id="answer4">
-                        </button>
-                        <hr>
+                  <div class="col-sm-8 col-md-8 col-lg-8">
+                    <div class="title-block">
+                      <h1>Michael Onyechi</h1>
+                      <div class="owl-carousel text-rotation">
+                        <div class="item">
+                          <div class="sp-subtitle">Full-Stack Web Developer</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Frontend-developer</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Backend Developer</div>
+                        </div>
+                        <div class="item">
+                          <div class="sp-subtitle">Photo Editor</div>
+                        </div>
+                      </div>
                     </div>
 
-                    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Project Source Code found <a href="https://github.com/Monyechi/QuizMaster">HERE</a></p>
-
-                    <h5 class="w3-opacity otherSkills"><b>Reverse A String</b></h5>
-                    <p class="w3-opacity"><b>This is a very simple Project I madewhile attending DevCodeCamp.
-                            We originally built this project using C#, but for demo purposes I rebuilt the project
-                            using HTML & JavaScript,</br></br>
-                            The objective of this project is to take in a string, and return the string in reverse.
-                        </b></p>
-
-                    <form id="myForm">
-                        <label for="inputText"><b>Enter whatever you want:</b></label>
-                        <input type="text" id="inputText" name="inputText">
-                        <input type="submit" value="Submit">
-                    </form>
-                    </br>
-                    </br>
-
-                    Your String in reverse: <u id="reversedString"></u>
-
-                    <br><br>
-                    </form>
-                    <script>
-                        const myForm = document.getElementById("myForm");
-                        myForm.addEventListener("submit", (e) => {
-                            e.preventDefault();
-                            let text = document.getElementById("inputText").value;
-                            let newText = ReverseString(text);
-                            document.querySelector("#reversedString").innerHTML = newText;
-                            console.log("Form has been submitted")
-                            console.log(newText)
-                        })
-
-                        function ReverseString(anyString) {
-                            const newString = anyString
-                                .split('')
-                                .reverse()
-                                .join('');
-
-                            return newString
-                        }
-                    </script>
-
-                </div>
-
-
-            </div>
-              
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact Me</h2>
-            <div class="line-dec"></div>
-            <span>
-              <p><b>(The best way to contact me would be by Email)</b></p>
-<p>E-Mail: <a href="mailto:Monyechi@Gmail.com">Monyechi@Gmail.com </a></p>
-<p>Phone: 407-924-6215</p>
-              </span>
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6"></div>
-                    <div class="col-md-12"></div>
-                    <div class="col-md-12"></div>
+                    <div class="social-links">
+                      <a href="https://github.com/Monyechi"><i class="fa fa-github"></i></a>
+                      <a href="https://www.linkedin.com/in/monyechi/"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://www.deviantart.com/slytyme"><i class="fa fa-deviantart"></i></a>
+                    </div>
                   </div>
-                </form>
+                </div>
+              </div>
+
+              <div class="page-content">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="about-me">
+                      <div class="block-title">
+                        <h3>About <span>Me</span></h3>
+                      </div>
+                      <p>
+                        Hey there! I'm Michael, a dedicated Full-Stack software developer with an unwavering commitment
+                        to excellence. A graduate of devCodeCamp’s 2020 bootcamp in Milwaukee, WI, I've mastered a range
+                        of programming languages and frameworks, including Python, C#, CSS, HTML, JavaScript, Django,
+                        React, ASP.NET MVC, and SQL. My journey hasn't stopped there—I continually refine my skills and
+                        expand my knowledge. Having served in the Army for over three years, I've developed essential
+                        attributes like problem-solving, discipline, and precision, which fuel my passion for software
+                        development. I excel in multitasking and thrive under pressure. I've even completed a Photoshop
+                        course, honing advanced skills in photo retouching, scene manipulation, and comprehensive
+                        editing techniques.
+                      </p>
+                    </div>
+                    <div class="download-">
+                      <a href="resume.pdf" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <ul class="info-list">
+                      <li><span class="title"><strong>Age</strong></span><span class="value" id="age"></span></li>
+                      <li><span class="title"><strong>Country</strong></span><span class="value">USA</span></li>
+                      <li><span class="title"><strong>Address</strong></span><span class="value">Orlando, FL</span></li>
+                      <li><span class="title"><strong>e-mail</strong></span><span class="value"><a
+                            href="mailto:email@example.com">Monyechi@Gmail.com</a></span></li>
+                      <li><span class="title"><strong>Phone</strong></span><span class="value">+1 (407) 583-9034</span>
+                      </li>
+                      <li><span class="title"><strong>Freelance</strong></span><span
+                          class="value available">Available</span></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          <!-- End of Home Subpage -->
+
+          <!-- Resume Subpage -->
+          <section class="pt-page" data-id="resume">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Resume</h2>
+              </div>
+              <div class="page-content">
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Education</h3>
+                      </div>
+
+                      <div class="timeline">
+                        <!-- Education 1 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Python/Django Bootcamp</h4>
+                          <span class="item-period">2023</span>
+                          <span class="item-small">Udemy</span>
+                          <p class="item-description">Complete Python Bootcamp focusing on fundamental concepts and
+                            essential skills for comprehensive proficiency.</p>
+                        </div>
+                        <!-- / Education 1 -->
+
+                        <!-- Education 2 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">React.js Bootcamp</h4>
+                          <span class="item-period">2023</span>
+                          <span class="item-small">Udemy</span>
+                          <p class="item-description">Comprehensive <React>
+                              <JavaScript></JavaScript> Workshop, emphasizing core principles and vital techniques to
+                              ensure a well-rounded expertise.</p>
+                        </div>
+                        <!-- / Education 2 -->
+
+                        <!-- Education 3 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Fundamentals To Photoshop</h4>
+                          <span class="item-period">2023</span>
+                          <span class="item-small">Udemy</span>
+                          <p class="item-description">Comprehensive Photoshop course imparting essential skills in
+                            Graphic Design, Photo Editing, and Retouching for beginners.</p>
+                        </div>
+                        <!-- / Education 3 -->
+
+
+                        <!-- / Education 4 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Full-Stack Web Development Bootcamp</h4>
+                          <span class="item-period">2020</span>
+                          <span class="item-small">devCodeCamp</span>
+                          <p class="item-description">Intensive full-stack web development bootcamp emphasizing C#,
+                            object-oriented programming, and foundational principles.</p>
+                        </div>
+                        <!-- / Education 4 -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Experience</h3>
+                      </div>
+
+                      <div class="timeline">
+                        <!-- Experience 1 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Photo Editor</h4>
+                          <span class="item-period">Aug 2023 - Current</span>
+                          <span class="item-small">Freelance</span>
+                          <p class="item-description">Enhanced visual storytelling through precise photo editing,
+                            ensuring impactful and compelling imagery for diverse projects.</p>
+                        </div>
+                        <!-- / Experience 1 -->
+
+                        <!-- Experience 2 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Full-Stack Developer</h4>
+                          <span class="item-period">Jul 2020 - Current</span>
+                          <span class="item-small">Freelance</span>
+                          <p class="item-description">Crafted dynamic web solutions, integrating front-end finesse with
+                            robust back-end functionality for seamless user experiences.</p>
+                        </div>
+                        <!-- / Experience 2 -->
+
+                        <!-- Experience 3 -->
+                        <div class="timeline-item">
+                          <h4 class="item-title">Team Leader & Superviser</h4>
+                          <span class="item-period">Oct 2011 - Oct 2013</span>
+                          <span class="item-small">U.S. ARMY</span>
+                          <p class="item-description">Led and supervised military teams, fostering cohesion and
+                            precision in high-pressure operations for mission success.</p>
+                        </div>
+                        <!-- / Experience 3 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Coding <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info">
+                        <h4>Python</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-1"></div>
+                        </div>
+
+                        <h4>C#</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-2"></div>
+                        </div>
+
+                        <h4>HTML5</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-3"></div>
+                        </div>
+
+                        <h4>CSS</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-3"></div>
+                        </div>
+
+                        <h4>JavaScript</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-4"></div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="block">
+                      <div class="block-title">
+                        <h3>Other <span>Skills</span></h3>
+                      </div>
+
+                      <div class="skills-info">
+                        <h4>Photoshop</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-5"></div>
+                        </div>
+
+                        <h4>Windows/Mac OS</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-6"></div>
+                        </div>
+
+                        <h4>Data-Entry</h4>
+                        <div class="skill-container">
+                          <div class="skill-percentage skill-7"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Download Resume Button -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="block">
+                      <div class="center download-resume">
+                        <a href="#" class="btn btn-secondary">Download Resume</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Download Resume Button -->
+
+              </div>
+            </div>
+          </section>
+          <!-- End of Resume Subpage -->
+
+
+          <!-- Services Subpage -->
+          <section class="pt-page" data-id="services">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Services</h2>
+              </div>
+              <div class="page-content">
+                <!-- My Services -->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12">
+                    <div class="block-title">
+                      <h3>My <span>Services</span></h3>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <!--<i class="service-icon fa fa-shopping-cart"></i>-->
+                        <div class="service-image">
+                          <img src="images/service/web_design_icon.png" alt="Responsive Design" class="mCS_img_loaded">
+                        </div>
+                        <h4>Web Design</h4>
+                        <p>Website construction will be executed by employing HTML in conjunction with robust frameworks
+                          such as Django, React, or ASP.NET MVC.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/photography_icon.png" alt="Photography" class="mCS_img_loaded">
+                        </div>
+                        <h4>Photo Editing</h4>
+                        <p>Image enhancement and manipulation will be carried out utilizing Adobe Photoshop and
+                          Lightroom for professional photo editing purposes.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/creativity_icon.png" alt="Creativity" class="mCS_img_loaded">
+                        </div>
+                        <h4>Code Debugging</h4>
+                        <p>Proactively identify and rectify software issues through precise troubleshooting and
+                          debugging, ensuring seamless functionality across systems.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-3">
+                    <div class="service-block">
+                      <div class="service-info">
+                        <div class="service-image">
+                          <img src="images/service/advetising_icon.png" alt="Advetising" class="mCS_img_loaded">
+                        </div>
+                        <h4>Data-Entry</h4>
+                        <p>Efficiently input and organize data, ensuring accuracy and meticulous attention to detail for
+                          maintaining organized and reliable records.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- End of My Services -->
+              </div>
+            </div>
+          </section>
+          <!-- End of Services Subpage -->
+
+          <!-- Demo Projects Subpage -->
+          <section class="pt-page" data-id="demos">
+            <div class="section-inner custom-page-content">
+                <div class="page-header color-1">
+                    <h2>Demo Projects</h2>
+                </div>
+                <div class="page-content">
+                    <!-- My Services -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="block-title">
+                                <h3>My <span>Projects</span></h3>
+                            </div>
+                        </div>
+                        <div class="w3-container w3-card w3-white">
+                            <div class="w3-container">
+                                <h3 class="w3-opacity otherSkills blue-title">Quiz Master</h3>
+                                <p class="w3-opacity">Quiz Master is a project I built while attending DevCodeCamp.
+                                    I built this project using the following technologies: JavaScript, CSS, openTriviaDb API, and
+                                    HTML. </br></br>
+                                    The objective of this project is to allow users to create an account, giving them access
+                                    to various
+                                    quizzes.
+                                </p>
+                                <div class="Quiz quiz-container">
+                                    <p class="QuizTitle">
+                                        Project Sample - Demo Quiz
+                                    </p>
+                                    <p hidden class="category" id="category">
+                                    </p>
+                                    <p hidden id="difficulty">
+                                    </p>
+                                    <p class="question" id="question">
+                                    </p>
+                                    <button class="button button1" id="answer1">
+                                    </button>
+                                    <button class="button button2" id="answer2">
+                                    </button>
+                                    <button class="button button3" id="answer3">
+                                    </button>
+                                    <button class="button button4" id="answer4">
+                                    </button>
+                                    <hr>
+                                </div>
+                                <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Project Source
+                                    Code found <a href="https://github.com/Monyechi/QuizMaster">HERE</a></p>
+                            </div>
+                        </div>
+        
+                        <div class="w3-container w3-card w3-white">
+                            <div class="w3-container">
+                                <h5 class="w3-opacity otherSkills blue-title"><b>Reverse A String</b></h5>
+                                <p class="w3-opacity"><b>This is a very simple Project I made while attending DevCodeCamp.
+                                        We originally built this project using C#, but for demo purposes I rebuilt the project
+                                        using HTML & JavaScript,</br></br>
+                                        The objective of this project is to take in a string, and return the string in reverse.
+                                    </b></p>
+                                <form id="myForm">
+                                    <label for="inputText"><b>Enter whatever you want:</b></label>
+                                    <input type="text" id="inputText" name="inputText">
+                                    <input type="submit" value="Submit">
+                                </form>
+                                </br>
+                                </br>
+                                Your String in reverse: <u id="reversedString"></u>
+                                <br><br>
+                            </div>
+                        </div>
+        
+                        <!-- End of My Services -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+          <!-- End of Demo Projects Subpage -->
+
+
+          <!-- Portfolio Subpage -->
+          <section class="pt-page" data-id="portfolio">
+            <div class="section-inner custom-page-content">
+              <div class="page-header color-1">
+                <h2>Editing Portfolio</h2>
+              </div>
+              <div class="page-content">
+
+                <!-- Portfolio Content -->
+                <div class="portfolio-content">
+
+                  <!-- Portfolio filter -->
+                  <ul id="portfolio_filters" class="portfolio-filters">
+                    <li class="active">
+                      <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="retouching">Retouching</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="manipulation">Manipulation</a>
+                    </li>
+                  </ul>
+                  <!-- End of Portfolio filter -->
+
+                  <!-- Portfolio Grid -->
+                  <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                    <!-- Portfolio Item 1 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/1.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/1.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 1 -->
+
+                    <!-- Portfolio Item 2 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/2.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/2.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 2 -->
+
+                    <!-- Portfolio Item 3 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/3.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/3.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 3 -->
+
+                    <!-- Portfolio Item 4 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/4.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/4.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 4 -->
+
+                    <!-- Portfolio Item 5 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/5.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/5.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 5 -->
+
+                    <!-- Portfolio Item 6 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/6.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/6.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 6 -->
+
+                    <!-- Portfolio Item 7 -->
+                    <figure class="item" data-groups='["all","retouching"]'>
+                      <a href="images/portfolio/full/7.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/7.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Retouching Before/After</h5>
+                          <small>Retouching</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 7 -->
+
+                    <!-- Portfolio Item 8 -->
+                    <figure class="item" data-groups='["all","manipulation"]'>
+                      <a href="images/portfolio/full/8.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/8.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Manipulation Before/After</h5>
+                          <small>Photo Manipulation</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 8 -->
+
+                    <!-- Portfolio Item 9 -->
+                    <figure class="item" data-groups='["all","manipulation"]'>
+                      <a href="images/portfolio/full/9.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/9.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Manipulation Before/After</h5>
+                          <small>Photo Manipulation</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 9 -->
+
+                    <!-- Portfolio Item 10 -->
+                    <figure class="item" data-groups='["all","manipulation"]'>
+                      <a href="images/portfolio/full/10.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/10.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Manipulation Before/After</h5>
+                          <small>Photo Manipulation</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 10 -->
+
+                    <!-- Portfolio Item 11 -->
+                    <figure class="item" data-groups='["all","manipulation"]'>
+                      <a href="images/portfolio/full/11.jpg" class="lightbox" title="Before/After">
+                        <img src="images/portfolio/11.jpg" alt="">
+                        <div>
+                          <h5 class="name">Photo Manipulation Before/After</h5>
+                          <small>Photo Manipulation</small>
+                          <i class="fa fa-image"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 11 -->
+                  </div>
+                  <!-- /Portfolio Grid -->
+
+                </div>
+                <!-- /Portfolio Content -->
+              </div>
+            </div>
+          </section>
+          <!-- /Portfolio Subpage -->
         </div>
-      </section>
+      </div>
+      <!-- /Page changer wrapper -->
     </div>
+    <!-- /Main Content -->
+  </div>
+  <footer>
+    <div class="copyrights">© 2017 All rights reserved. Material template by LMPixels</div>
+  </footer>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos,
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function () {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function (e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function () {
-        checkSection();
-      });
-    </script>
-  </body>
-
-  <style>
-    .Quiz {
-        position: relative;
-        top: -60px;
-        left: 10%;
-        width: 720px;
-        padding: 30px;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.45);
-        color: black;
-        height: 300px;
-    }
-    
-    .QuizTitle {
-        color: black;
-        top: 0px;
-        left: 0px;
-        position: relative;
-    }
-    
-    .button {
-        background-color: #a43f49;
-        /* Green */
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        width: 150px;
-        height: 110px;
-    }
-    
-    .button1 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        left: 0px;
-        bottom: 0px;
-    }
-    
-    .button1:hover {
-        background-color: #a43f49;
-        color: white;
-    }
-    
-    .button2 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button2:hover {
-        background-color: #a43f49;
-        color: white;
-    }
-    
-    .button3 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button3:hover {
-        background-color: #a43f49;
-        color: white;
-    }
-    
-    .button4 {
-        background-color: rgba(0, 0, 0, 0.63);
-        color: white;
-        position: relative;
-        bottom: 0px;
-    }
-    
-    .button4:hover {
-        background-color: #a43f49;
-        color: white;
-    }
-    
-    .category {
-        font-weight: 400;
-        font-style: italic;
-        position: relative;
-        top: -20px;
-        left: 0px;
-    }
-    
-    .question {
-        font-size: 20px;
-        padding-bottom: 30px;
-        font-size: 20px;
-        font-weight: 500;
-    }
-    
-    .otherSkills {
-        color: #a43f49;
-        font-size: 18px;
-    }
-</style>
-<script>
-    window.onload = sendApiRequest
-
-    //An asynchronous function to fetch data from the API.
-    async function sendApiRequest() {
-        let response = await fetch(`https://opentdb.com/api.php?amount=1&category=9&difficulty=hard&type=multiple`);
-        console.log(response)
-        let data = await response.json()
-        console.log(data)
-        quizApp(data)
-    }
-
-    // A function to shuffle array of answers
-    Array.prototype.shuffle = function() {
-        let i = this.length,
-            j, temp;
-        while (--i > 0) {
-            j = Math.floor(Math.random() * (i + 1));
-            temp = this[j];
-            this[j] = this[i];
-            this[i] = temp;
-        }
-        return this;
-    }
-
-
-    //function that does something with the data received from the API.
-
-
-    function quizApp(data) {
-        var correctAnswer = data.results[0].correct_answer;
-        let wrongAnswer1 = data.results[0].incorrect_answers[0];
-        let wrongAnswer2 = data.results[0].incorrect_answers[1];
-        let wrongAnswer3 = data.results[0].incorrect_answers[2];
-
-        let answer1;
-        let answer2;
-        let answer3;
-        let answer4;
-
-        let answers = [correctAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3];
-        let shuffledAnswers = answers.shuffle();
-
-        answer1 = shuffledAnswers[0];
-        answer2 = shuffledAnswers[1];
-        answer3 = shuffledAnswers[2];
-        answer4 = shuffledAnswers[3];
-
-        let button1 = document.querySelector("#answer1");
-        let button2 = document.querySelector("#answer2");
-        let button3 = document.querySelector("#answer3");
-        let button4 = document.querySelector("#answer4");
-
-
-        document.querySelector("#category").innerHTML = `Category: ${data.results[0].category}`
-        document.querySelector("#difficulty").innerHTML = `Difficulty: ${data.results[0].difficulty}`
-        document.querySelector("#question").innerHTML = `Question: ${data.results[0].question}`
-        document.querySelector("#answer1").innerHTML = answer1
-        document.querySelector("#answer2").innerHTML = answer2
-        document.querySelector("#answer3").innerHTML = answer3
-        document.querySelector("#answer4").innerHTML = answer4
-
-        var RightAnswer = answers.find(element => element === correctAnswer);
-
-        button1.addEventListener("click", () => {
-            compareAnswer(answer1)
-        })
-
-        button2.addEventListener("click", () => {
-            compareAnswer(answer2)
-        })
-
-        button3.addEventListener("click", () => {
-            compareAnswer(answer3)
-        })
-
-        button4.addEventListener("click", () => {
-            compareAnswer(answer4)
-        })
-
-        function compareAnswer(answer) {
-            if (answer === RightAnswer) {
-                alert("Correct! YOU ARE SO SMART!")
-                location.reload()
-            } else if (answer !== RightAnswer) {
-                alert("You are so Wrong! The Correct Answer is " + RightAnswer)
-                location.reload()
-            }
-        }
-
-    }
-</script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/game_app.js"></script>
+  <script type="text/javascript" src="js/pages-switcher.js"></script>
+  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/validator.js"></script>
+  <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+  <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript" src="js/jquery.googlemap.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
 
 </html>

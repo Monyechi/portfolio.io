@@ -44,7 +44,7 @@
 .question {
     font-weight: bold;
     font-size: 24px; /* Adjust the size as needed */
-    animation: flash-underline 0.5s infinite; /* Flashing underline animation */
+    animation: flash-underline 2s infinite; /* Flashing underline animation */
 }
 
 @keyframes flash-underline {

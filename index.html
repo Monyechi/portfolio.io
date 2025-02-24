@@ -166,24 +166,41 @@
                     <ul class="info-list">
                       <li>
                         <span class="info-title"><strong>Age: </strong></span><span class="info-value" id="age"></span>
+                        <script>
+                          function calculateAge(birthday) {
+                            const birthDate = new Date(birthday);
+                            const today = new Date();
+                            let age = today.getFullYear() - birthDate.getFullYear();
+                            const monthDifference = today.getMonth() - birthDate.getMonth();
+                            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+                              age--;
+                            }
+                            return age;
+                          }
+
+                          document.addEventListener("DOMContentLoaded", () => {
+                            const ageElement = document.getElementById("age");
+                            const birthday = "1990-07-18";
+                            ageElement.textContent = calculateAge(birthday);
+                          });
+                        </script>
                       </li>
                       <li>
                         <span class="info-title"><strong>Country: </strong></span><span class="info-value">USA</span>
                       </li>
                       <li>
-                        <span class="info-title"><strong>Address: </strong></span><span class="info-value">Orlando,
+                        <span class="info-title"><strong>City: </strong></span><span class="info-value">Orlando,
                           FL</span>
                       </li>
                       <li>
-                        <span class="info-title"><strong>E-mail: </strong></span><span class="info-value"><a
-                            href="mailto:Monyechi@Gmail.com">Monyechi@Gmail.com</a></span>
+                        <span class="info-title"><strong>E-mail: </strong></span><span class="info-value" style="margin-left: 50px;"><a
+                          href="mailto:Monyechi@Gmail.com">Monyechi@Gmail.com</a></span>
                       </li>
                       <li>
-                        <span class="info-title"><strong>Phone: </strong></span><span class="info-value">+1 (407)
-                          583-9034</span>
+                        <span class="info-title"><strong>Phone / </strong><i class="fa fa-whatsapp" style="font-weight: bold;"></i><strong> : </strong></span><span class="info-value">+1 (407) 924-6215</span>
                       </li>
                       <li>
-                        <span class="info-title"><strong>Freelance: </strong></span><span
+                        <span class="info-title"><strong>Availablity: </strong></span><span
                           class="info-value status available">Available</span>
                       </li>
                     </ul>

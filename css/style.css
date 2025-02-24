@@ -1,4 +1,62 @@
-/* Updated CSS for Game Buttons */
+/* General Project Container Styles */
+.project-container {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Content and Titles */
+.content-container {
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #2b78ff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Quiz Container and Elements */
+.quiz-container {
+    background-color: #a7b3b382;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quiz-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Buttons and Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 .button {
     background-color: #2b78ff;
     border: none;
@@ -6,52 +64,227 @@
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    margin: 4px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 150px; /* Fixed width */
-    height: 110px; /* Fixed height */
+    width: 48%;
+    box-sizing: border-box;
     font-size: 16px;
-    overflow: hidden; /* Hide overflowing text */
 }
 
-.button1 {
-    background-color: #000000a1;
-}
-
-.button1:hover {
-    background-color: #2b78ff;
-}
-
-.button2,
-.button3,
-.button4 {
+.button1, .button2, .button3, .button4 {
     background-color: rgba(0, 0, 0, 0.63);
 }
 
-.button2:hover,
-.button3:hover,
-.button4:hover {
+.button:hover {
     background-color: #2b78ff;
-}
-/* CSS for Blue Titles */
-.blue-title {
-    color: #2b78ff;
-    font-size: 18px;
-    font-weight: bold;
-}
-.question {
-    font-weight: bold;
-    font-size: 24px; /* Adjust the size as needed */
-    animation: flash-underline 2s infinite; /* Flashing underline animation */
+    filter: brightness(90%);
 }
 
-@keyframes flash-underline {
-    0%, 100% {
-        text-decoration: none;
-    }
-    50% {
-        text-decoration: underline;
-    }
+/* Result Box Styling */
+.result-box {
+    display: none; /* Initially hidden */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
 }
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
+/* General Page Content Styling */
+.page-content {
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* About Me Section Styling */
+.about-me-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title h3 {
+    font-size: 26px;
+    color: #2b78ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: #444;
+}
+
+.about-me-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Resume Download Button */
+.resume-download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resume-download .btn {
+    background-color: #2b78ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.resume-download .btn:hover {
+    background-color: #1a5c99;
+}
+
+/* Info List Styling */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.info-title {
+    font-weight: bold;
+    color: #444;
+}
+
+.info-value {
+    color: #555;
+}
+
+.status.available {
+    color: green;
+    font-weight: bold;
+}
+
+/* The container is already position: relative in the HTML inline style */
+
+/* Container for the entire slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* Adjust as needed */
+    margin: 20px 0;   /* Spacing above/below the slideshow */
+  }
+  
+  /* Each slide */
+  .slide {
+    display: none; /* Hide all slides by default */
+    position: relative;
+    width: 100%;
+    /* Force a 16:9 aspect ratio using padding trick */
+    padding-bottom: 56.25%; 
+    overflow: hidden;
+  }
+  
+  /* The slide's image (cover the container) */
+  .slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop to fill the container */
+  }
+
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 12px;
+    margin-top: -1rem;
+    user-select: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  
+  /* On hover, slightly brighten the nav buttons */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Modal styling (unchanged from your code) */
+  .modal {
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    z-index: 999;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 6px;
+    position: relative;
+  }
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .close-btn:hover,
+  .close-btn:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  .open-modal-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

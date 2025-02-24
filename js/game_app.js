@@ -1,5 +1,11 @@
+// =====================
+// QUIZ APP LOGIC
+// =====================
+
+// Initialize the Quiz App on window load
 window.onload = sendApiRequest;
 
+// Function to send API request to fetch quiz questions
 async function sendApiRequest() {
   const response = await fetch(
     "https://opentdb.com/api.php?amount=1&category=9&difficulty=hard&type=multiple"
@@ -8,6 +14,7 @@ async function sendApiRequest() {
   quizApp(data.results[0]);
 }
 
+// Function to shuffle the answers array
 Array.prototype.shuffle = function () {
   let i = this.length,
     j,
@@ -21,6 +28,7 @@ Array.prototype.shuffle = function () {
   return this;
 };
 
+// Function to initialize the quiz with data from API
 function quizApp({
   correct_answer,
   incorrect_answers,
@@ -37,20 +45,42 @@ function quizApp({
 
   buttons.forEach((button, index) => {
     button.innerHTML = answers[index];
-    button.addEventListener("click", () =>
-      compareAnswer(answers[index], correct_answer)
-    );
+    button.onclick = () => compareAnswer(answers[index], correct_answer);
   });
 }
 
+// Function to compare selected answer with the correct answer
 function compareAnswer(selectedAnswer, correctAnswer) {
-  const message =
-    selectedAnswer === correctAnswer
-      ? "Correct! YOU ARE SO SMART!"
-      : `You are so Wrong! The Correct Answer is ${correctAnswer}`;
-  alert(message);
-  location.reload();
+  const isCorrect = selectedAnswer === correctAnswer;
+  const message = isCorrect
+    ? "Correct! YOU ARE SO SMART!"
+    : `You are so Wrong! The Correct Answer is ${correctAnswer}`;
+  showMessage(message, isCorrect);
 }
+
+// Function to show the result in the result box
+function showMessage(message, isCorrect) {
+  const resultBox = document.getElementById("resultBox");
+  resultBox.className = isCorrect ? "result-box success" : "result-box error";
+  resultBox.innerHTML = message;
+  resultBox.style.display = "block";
+  
+  setTimeout(() => {
+    resultBox.style.display = "none"; // Hide the message after a few seconds
+    sendApiRequest(); // Fetch a new question without reloading the page
+  }, 3000); // Adjust the timeout duration as needed
+}
+
+// =====================
+// END OF QUIZ APP LOGIC
+// =====================
+
+
+// ===========================
+// REVERSE A STRING LOGIC
+// ===========================
+
+// Form submission event listener
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -61,12 +91,22 @@ myForm.addEventListener("submit", (e) => {
   console.log(newText);
 });
 
+// Function to reverse a given string
 function ReverseString(anyString) {
   const newString = anyString.split("").reverse().join("");
-
   return newString;
 }
-// Calculate age based on birthdate
+
+// ============================
+// END OF REVERSE A STRING LOGIC
+// ============================
+
+
+// ============================
+// AGE CALCULATION LOGIC
+// ============================
+
+// Function to calculate age based on birthdate
 function calculateAge(birthdate) {
   const birthdateObj = new Date(birthdate);
   const currentDate = new Date();
@@ -83,3 +123,7 @@ function calculateAge(birthdate) {
 // Update the age element
 const ageElement = document.getElementById('age');
 ageElement.textContent = calculateAge('07/18/1990');
+
+// ============================
+// END OF AGE CALCULATION LOGIC
+// ============================

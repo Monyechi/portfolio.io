@@ -97,4 +97,3 @@ This portfolio is for personal use and public presentation. Feel free to browse 
 
 - Design Template by **LMPixels**
 - Powered by passion, purpose, and persistence 💪
-```

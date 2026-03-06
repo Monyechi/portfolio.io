@@ -594,16 +594,22 @@
                     <div class="content-container">
                       <h3 class="title">Quiz Master &ndash; Android Native</h3>
                       <p class="description">
-                        Quiz Master Android is the native Android port of the Quiz Master web application, rebuilt from the ground up in Kotlin. It demonstrates a production-ready Android architecture and a complete feature parity with the original ASP.NET MVC app:
+                        Quiz Master Android began as a full migration of my original Quiz Master ASP.NET MVC web platform into a native Kotlin application. The objective was to preserve core product behavior (authentication, role-based dashboards, quizzes, profiles, and messaging) while re-architecting the system with modern Android patterns and improving data integrity where needed.
+                      </p>
+                      <p class="description">
+                        This project demonstrates practical mobile engineering: converting server-centric MVC workflows into MVVM + repository layers, replacing web session mechanics with local session persistence, and integrating live trivia data through a typed networking stack. It is designed as a portfolio-grade app that is both user-facing and technically explainable.
                       </p>
                       <ul>
-                        <li><strong>Language:</strong> Kotlin with MVVM architecture and ViewBinding.</li>
-                        <li><strong>Local Database:</strong> Room (SQLite) for user accounts, profiles, and messages.</li>
-                        <li><strong>Dependency Injection:</strong> Hilt for clean, testable dependency management.</li>
-                        <li><strong>Networking:</strong> Retrofit + OkHttp to fetch live quiz questions from the Open Trivia DB API.</li>
-                        <li><strong>Navigation:</strong> Jetpack Navigation Component with a single-activity architecture.</li>
-                        <li><strong>Auth:</strong> SHA-256 + salt password hashing stored locally — no backend required.</li>
-                        <li><strong>Roles:</strong> Separate Student and Instructor flows with messaging between them.</li>
+                        <li><strong>Migration Scope:</strong> Ported from ASP.NET MVC/Entity Framework architecture to Android native Kotlin while maintaining feature parity.</li>
+                        <li><strong>Architecture:</strong> MVVM with a repository layer, Fragments + ViewModels, LiveData/StateFlow, and clear UI/data separation.</li>
+                        <li><strong>Data Layer:</strong> Room (SQLite) entities and DAOs for User, Student, Instructor, and Message models.</li>
+                        <li><strong>Dependency Injection:</strong> Hilt-managed app graph for database, DAOs, repositories, and networking services.</li>
+                        <li><strong>Networking:</strong> Retrofit + OkHttp client with typed request/response models and repository-level mapping.</li>
+                        <li><strong>Trivia API:</strong> Open Trivia DB (`https://opentdb.com/api.php`) with category mapping for Science (17), Math (19), and History (23), plus Easy/Medium/Hard difficulty support.</li>
+                        <li><strong>Question Processing:</strong> HTML-decoding and answer-shuffle logic performed before rendering to ensure accurate, randomized quiz flow.</li>
+                        <li><strong>Authentication:</strong> Local auth with SHA-256 + salt password hashing and SharedPreferences-backed session management.</li>
+                        <li><strong>Role Workflows:</strong> Distinct Student and Instructor dashboards, profile CRUD, instructor enrollment, and in-app messaging.</li>
+                        <li><strong>Engineering Improvements:</strong> Fixed routing/data issues present in the web version (including proper relational linking for instructor/student associations).</li>
                       </ul>
                       <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:16px 0;">
                         <img src="images/quizmaster_android_login.png" alt="Quiz Master Login" style="width:180px; border-radius:16px;" />
